@@ -70,7 +70,5 @@ We welcome first time contributors and open source enthusiasts. Check out our is
 
 If you liked this project, please leave a 🌟
 
-<p align="center">
-	With :heart: by <a href="https://www.codechefvit.com" target="_blank">CodeChef-VIT</a>
-</p>
+
 
