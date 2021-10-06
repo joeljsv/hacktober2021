@@ -3,6 +3,8 @@
 
 **I created this WebApp using JavaScript and LeafletJS and used the WhereTheIss.at API for getting the current position of the International Space Station [wheretheiss](https://wheretheiss.at/w/developer "API").**
 
+The LeafletJS map uses the ThunderForest-Atlas tile layer for displaying the map.
+
 _Bulma was used for styling this page!!_
 
 The website is hosted on firebase at [trackiss](https://trackiss.web.app/ "Track ISS").
