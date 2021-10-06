@@ -43,7 +43,7 @@ int findRotationCount(vector<int>& arr)
 int main()
 {
     vector<int> arr{15, 18, 2, 3, 6, 12} ;
-    
+    //Here the rotation count will be 2.
     cout<<"The rotation count(clockwise) of array is "<<findRotationCount(arr)<<"."<<endl;
     return 0;
 }
