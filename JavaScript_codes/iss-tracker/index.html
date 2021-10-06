@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="https://freesvg.org/img/2fcce003.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma-rtl.min.css"
+    />
+
+    <!-- LeafletJs Cdn -->
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+    <title>ISS Tracker</title>
+  </head>
+  <body class="has-text-centered">
+    <h2 class="title is-1 has-text-centered pt-1">ISS Tracker</h2>
+    <h3 class="subtitle">International Space Station</h3>
+    <p class="coordinates mb-4"></p>
+    <button class="startStop button is-success is-normal is-rounded mt-2">
+      Start Tracking
+    </button>
+    <p class="del has-text-centered pt-2 is-italic has-text-weight-bold" style="display: none;">Wait...</p>
+    <div class="is-flex is-flex-direction-row is-justify-content-center">
+      <div id="map" class="mt-6 mb-6 has-text-centered"></div>
+    </div>
+    <footer class="pb-4">
+      <p>Made By : Utkarsh Tripathi</p>
+      <a href="https://github.com/utkarsh-1905/ISS-Tracker.git" target="_blank"
+        ><img
+          src="https://camo.githubusercontent.com/b079fe922f00c4b86f1b724fbc2e8141c468794ce8adbc9b7456e5e1ad09c622/68747470733a2f2f6564656e742e6769746875622e696f2f537570657254696e7949636f6e732f696d616765732f7376672f6769746875622e737667"
+          alt="Github"
+      /></a>
+      <a href="https://www.linkedin.com/in/utkarsh-tripathi-80a0ab192" target="_blank"
+        ><img
+          src="https://camo.githubusercontent.com/c8a9c5b414cd812ad6a97a46c29af67239ddaeae08c41724ff7d945fb4c047e5/68747470733a2f2f6564656e742e6769746875622e696f2f537570657254696e7949636f6e732f696d616765732f7376672f6c696e6b6564696e2e737667"
+          alt="LinkedIn"
+      /></a>
+    </footer>
+    <style>
+      body{
+        width: 100%;
+        background-color: #A9A9A9;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+      #map {
+        height: 75vh;
+        width: 43vw;
+        border: 1px solid transparent;
+        border-radius: 15px;
+      }
+      p {
+        text-align: center;
+      }
+      img {
+        display: inline-block;
+        width: 25px;
+        height: auto;
+      }
+      @media (max-width: 500px) {
+        #map {
+          width: 85vw;
+        }
+      }
+    </style>
+    <script src="app.js"></script>
+  </body>
+</html>
