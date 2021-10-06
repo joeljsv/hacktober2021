@@ -1,0 +1,14 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    float inch,cen;
+    int feet;
+    cout<<"Enter the value in centimeters ";
+    cin>>cen;
+    inch=cen/2.54;
+    feet=inch/12;
+    inch=inch-feet*12;
+    cout<<cen<<" centimeter is equals to "<<feet<<" feet "<<inch<<" inch";
+    return 0;
+}
