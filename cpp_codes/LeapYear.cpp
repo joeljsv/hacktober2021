@@ -1,6 +1,9 @@
 #include <iostream>
 using namespace std;
-
+//conditions to check for leap year:
+//year should be divisible by 4
+//it should be divisible by 400 and 100
+//it should not be divisible by 100 but divisible by 4 
 int main() {
 	//to check for leap year
 	int year;
