@@ -1,0 +1,27 @@
+#colorDiv {
+  background-color: red;
+  color: white;
+  font-family: cursive;
+  font-size: 25px;
+  width: 600px;
+  height: 500px;
+  margin: 50px auto 50px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#button {
+  text-align: center;
+  width: 200px;
+  height: 50px;
+  margin: 50px auto 50px;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  background: rgb(12, 212, 226);
+  border-radius: 15px;
+  border-style: none;
+  display: block;
+}
