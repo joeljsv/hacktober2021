@@ -1,0 +1,100 @@
+* {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 900;
+}
+
+body {
+  width: 100%;
+  margin: auto;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-image: url("assets/bg-3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:center center;
+  background-attachment: fixed;
+}
+
+h1 {
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  animation: color-change-3x 2s linear infinite alternate both;
+  /* animation: scaling 2.25s normal linear infinite; */
+  font-size: xx-large;
+  color: transparent;
+  transform: scale(2.8, 2.8);
+}
+
+div {
+  margin: 20px;
+  display: inline-block;
+  text-align: center;
+}
+
+.container img {
+  display: block;
+  padding: 10px;
+  transform: scale(1.5, 1.5);
+}
+
+.container span {
+  font-weight: 900;
+  /* color:transparent;
+    animation: color-change-3x 2s linear infinite alternate both; */
+  color: whitesmoke;
+}
+
+@media (max-width: 500px) {
+    body{
+        background-image: url('assets/bg-3-mobile.jpg');
+    }
+    div{
+        margin: 8px;
+    }
+  .container img {
+    margin: auto;
+    padding: 3px;
+    transform: scale(0.9,0.9);
+  }
+  h1{
+      transform: scale(1.1,0.9);
+  }
+}
+
+
+.align {
+  text-align: center;
+}
+
+footer{
+  text-align: center;
+}
+
+small{
+  display: block;
+  font-size: larger;
+}
+
+.social{
+    display: inline-block;
+    width: 25px;
+    height: auto;
+    margin-bottom: 5px;
+}
+
+@keyframes color-change-3x {
+  0% {
+    background: #19dcea;
+    -webkit-background-clip: text;
+  }
+  50% {
+    background: #b22cff;
+    -webkit-background-clip: text;
+  }
+  100% {
+    background: #ea2222;
+    -webkit-background-clip: text;
+  }
+}
