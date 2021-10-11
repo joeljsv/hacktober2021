@@ -1,7 +1,7 @@
-#Face-Mask-Detector-Project In Python Programming Language
+#Face-Mask-Detector-Project In Python Programming Language 
 
 
-##Part-01: Training Part
+##Part-01: Training Of Model
 
 from keras.optimizers import RMSprop
 from keras.preprocessing.image import ImageDataGenerator
