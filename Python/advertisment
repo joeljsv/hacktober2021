@@ -1,0 +1,27 @@
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+from sklearn.model_selection import train_test_split
+import seaborn as sns
+a=pd.read_csv("advertising.csv")
+a.head(1000)
+b=a[['Daily Time Spent on Site','Age','Area Income','Daily Internet Usage','Male']]
+c=a['Clicked on Ad']
+xtrain,xtest,ytrain,ytest=train_test_split(b,c,test_size=0.20,random_state=41)
+from sklearn.linear_model import LogisticRegression
+lr=LogisticRegression()
+model=lr.fit(xtrain,ytrain)
+pre=lr.predict(xtest)
+print("enter data in this form =>Daily Time Spent on Site':\n'Age':\n'Area Income':\n'Daily Internet Usage':\n'Male':\n")
+will_click=[]
+for _ in range(5):
+    l=float(input())
+    will_click.append(l)
+wl=[will_click]
+pred = model.predict(wl)
+print(pred)
+
+if pred == 0:
+    print('No,you will not click on ad' )
+else:
+    print('Yes, they will click on ad!')
