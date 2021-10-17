@@ -28,7 +28,8 @@ void Graph::addEdge(int u, int v, int w)
 }
   
 void Graph::shortestPath(int src)
-{
+{ 
+ // Create a priority queue to store vertices
     priority_queue< iPair, vector <iPair> , greater<iPair> > pq;
   
     vector<int> dist(V, INF);
@@ -42,6 +43,7 @@ void Graph::shortestPath(int src)
         pq.pop();
   
         list< pair<int, int> >::iterator i;
+      //Get vertex label and weight of current adjacent
         for (i = adj[u].begin(); i != adj[u].end(); ++i)
         {
             int v = (*i).first;
