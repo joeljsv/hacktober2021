@@ -1,0 +1,31 @@
+#include <iostream> 
+using namespace std; 
+
+int chkp(int a){// Check if number is prime
+    for(int i=2;i*i<=a;i++){
+        if(a%i==0)  return 0;
+    }
+    return 1;
+}
+
+int find_par(int l,int r,int k){
+// l Lower Limit
+// r Higher Limit
+// k Given Difference between Prime Pairs
+    int c=0;
+    for(int i=l;i<=r-k;i++){
+        if(chkp(i)==1){
+            if(chkp(i+k)==1){
+              c++;
+            }
+        }
+    }
+    return c;
+}
+
+int main() 
+{ 
+    int l=4,r=30,k=6;
+	cout<<find_par(l,r,k);
+	return 0; 
+}
